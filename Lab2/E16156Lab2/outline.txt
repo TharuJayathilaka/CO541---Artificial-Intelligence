@@ -1,0 +1,24 @@
+
+E/16/156
+ 
+8-puzzle problem
+
+Outline of the data structure and implementations required to
+implement an 8-puzzle search
+--------------------------------------------------------------------------
+
+* To arrange the tiles for the puzzle, the area was moved. With every movement, the room underwent a state shift.
+* Therefore, we may assume that this eight-puzzle problem has a finite number of states depending on how the space is changing.
+* Space can be moved left, right, up, and down.
+* There are costs associated with every modification to the problem's objective state. The cost could increase or decrease when a movement is performed.
+* In order to accomplish our goal, we want to spend as little money as feasible.
+* Then, this idea can be represented as a search tree or a graph. Each node in the graph represents a momentary state caused by spatial movement.
+* The goal node is among these nodes and is accessible. We must navigate the graph in order to reach this objective node for the least amount of money. 
+  We can utilize appropriate search algorithms like BFS, DFS, or A* for this.
+
+Without a heuristic function, it takes a lot longer to complete the 16-step issue.Processes can be accelerated by adding heuristic function.
+Time taken to solve the 16 step problem. 
+without h:3.326572 seconds
+with mismatched tiles:0.008107 seconds
+with manhattan distance:0.000786 seconds
+
